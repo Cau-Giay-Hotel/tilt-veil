@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Tilt Veil</title>
+<meta name="description" content="Privacy Policy for the Tilt Veil Android app, published by CauGiay Hotel. Explains on-device data, Firebase and AdMob/UMP SDKs, permissions, and your choices.">
+<style>
+  :root{
+    --bg:#f6f7f9; --card:#ffffff; --text:#1c2128; --muted:#5b6572;
+    --accent:#2f6fed; --border:#e3e6ea; --tint:#eef3ff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --bg:#14171c; --card:#1b1f26; --text:#e8eaed; --muted:#98a1ad; --accent:#6ea2ff; --border:#2a2f38; --tint:#1c2636; }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--text);
+    font:16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  }
+  .wrap{max-width:720px; margin:0 auto; padding:40px 20px 90px}
+  a{color:var(--accent)}
+  .crumb{font-size:.85rem; color:var(--muted); margin-bottom:18px}
+  .crumb a{text-decoration:none}
+  header{
+    background:var(--card); border:1px solid var(--border); border-radius:14px;
+    padding:24px 24px 20px; margin-bottom:28px;
+  }
+  h1{font-size:1.6rem; margin:0 0 8px}
+  .meta{color:var(--muted); font-size:.9rem; margin:0}
+  .meta strong{color:var(--text)}
+  main h2{font-size:1.15rem; margin:34px 0 10px; padding-top:6px; border-top:1px solid var(--border)}
+  main h2:first-of-type{border-top:none; margin-top:0}
+  main h3{font-size:1rem; margin:20px 0 8px}
+  p{margin:0 0 14px}
+  ul,ol{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:6px}
+  table{width:100%; border-collapse:collapse; margin:0 0 18px; font-size:.92rem}
+  th,td{text-align:left; padding:9px 10px; border:1px solid var(--border); vertical-align:top}
+  th{background:var(--tint)}
+  code{background:var(--tint); padding:1px 5px; border-radius:4px; font-size:.88em}
+  .callout{background:var(--tint); border:1px solid var(--border); border-radius:10px; padding:14px 16px; margin:0 0 16px; font-size:.94rem}
+  footer{margin-top:44px; padding-top:20px; border-top:1px solid var(--border); color:var(--muted); font-size:.85rem}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="crumb"><a href="../">Tilt Veil — Legal &amp; Policies</a> / Privacy Policy</div>
+
+  <header>
+    <h1>Privacy Policy — Tilt Veil</h1>
+    <p class="meta"><strong>Effective date:</strong> September 30, 2026 &nbsp;·&nbsp; <strong>Publisher:</strong> CauGiay Hotel</p>
+  </header>
+
+  <main>
+    <p>CauGiay Hotel ("<strong>we</strong>," "<strong>us</strong>," "<strong>our</strong>") publishes the Android
+    application <strong>Tilt Veil</strong> (package <code>com.privacyscreen.tiltdim.tiltveil</code>, the
+    "<strong>App</strong>"). This Privacy Policy explains what data the App and the third-party services it
+    uses collect, why, and what choices you have. It applies to this build of the App as published on
+    Google Play.</p>
+    <p>Questions about this policy: <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a>.</p>
+
+    <h2>1. What Tilt Veil does</h2>
+    <p>Tilt Veil is a screen-privacy utility. It reads your device's rotation sensor to detect how far
+    you've tilted your phone, and when the tilt passes a threshold you set, it draws a dimming or patterned
+    overlay on top of whatever screen you're looking at — so someone glancing at your phone from an angle
+    can't read it. A second mode lets you toggle the overlay on and off from a floating bubble. You can
+    optionally limit the overlay to a specific list of apps you choose.</p>
+    <p>All of this runs <strong>entirely on your device</strong>. Tilt Veil does not have user accounts,
+    does not require sign-in, and does not operate any server that receives your activity, your screen
+    content, or the apps you use. The sections below describe exactly what data the App's underlying
+    components collect.</p>
+
+    <h2>2. Data you provide</h2>
+    <p>Tilt Veil does not ask you to create an account, sign in, or enter any personal information (name,
+    email, phone number, etc.). There is nothing to "provide" to us directly.</p>
+
+    <h2>3. Data collected automatically</h2>
+
+    <h3>3.1 Settings and preferences — stored only on your device</h3>
+    <p>Your dimming intensity, tilt-angle threshold, protection mode, and the list of apps you've chosen
+    to protect are saved locally on your device using Android's DataStore. <strong>This data is never
+    transmitted to us or to anyone else</strong>, is not backed up to any account, and is deleted
+    automatically if you uninstall the App.</p>
+
+    <h3>3.2 Foreground app name — used only locally, only if you grant Usage Access</h3>
+    <p>If you choose to limit the overlay to specific apps, Tilt Veil requests the <strong>Usage
+    Access</strong> special permission (<code>PACKAGE_USAGE_STATS</code>) so it can tell which app is
+    currently in the foreground and decide whether to show the overlay. Tilt Veil reads <strong>only the
+    package name</strong> of the app in front — never screen content, never a history of what you've used —
+    and this information is processed on-device and discarded immediately; it is not stored or sent
+    anywhere.</p>
+    <div class="callout">If you do not grant this permission, the overlay simply applies to every app —
+    the App tells you this in its own settings screen.</div>
+
+    <h3>3.3 Analytics, crash reporting, and remote configuration — Firebase (Google)</h3>
+    <p>Tilt Veil uses the following Google Firebase services, which collect data on Google's servers under
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+    Policy</a>:</p>
+    <ul>
+      <li><strong>Firebase Analytics</strong> — collects app-interaction events (e.g. which screens and
+      settings you use) and device/app identifiers, to help us understand how the App is used and improve
+      it.</li>
+      <li><strong>Firebase Crashlytics</strong> — collects crash reports and diagnostic data (device model,
+      OS version, stack traces) when the App crashes, to help us fix bugs.</li>
+      <li><strong>Firebase Remote Config</strong> — fetches configuration values from Google's servers in
+      release builds, to let us adjust certain app behavior without shipping an update.</li>
+    </ul>
+
+    <h3>3.4 Advertising SDK — Google AdMob and User Messaging Platform (UMP)</h3>
+    <p>Tilt Veil ships with Google's AdMob SDK and its User Messaging Platform (UMP) consent library, which
+    initialize on launch and run a consent flow. <strong>This build of the App does not display any
+    advertising</strong> — there is no ad placement anywhere in its screens. However, because the SDKs
+    initialize, they interact with your device's advertising identifier and related ad-service identifiers
+    as part of Google's standard advertising/consent framework, consistent with
+    <a href="https://support.google.com/admob/answer/6128543" target="_blank" rel="noopener">Google AdMob's
+    data disclosure</a>. If we enable ads in a future version, this policy and the App's Play Store listing
+    will be updated accordingly before that version is published.</p>
+
+    <h3>3.5 Permissions the App requests, and why</h3>
+    <table>
+      <tr><th>Permission</th><th>What it's for</th></tr>
+      <tr><td><strong>Display over other apps</strong> (<code>SYSTEM_ALERT_WINDOW</code>)</td><td>Required to draw the privacy overlay on top of other apps — this is the App's core function.</td></tr>
+      <tr><td><strong>Usage Access</strong> (<code>PACKAGE_USAGE_STATS</code>)</td><td>Optional; lets the App detect the foreground app so it can apply the overlay only to apps you've selected. See §3.2.</td></tr>
+      <tr><td><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>)</td><td>Shows a persistent notification with Pause/Resume controls while protection is running in the background.</td></tr>
+      <tr><td><strong>Run in foreground</strong> (<code>FOREGROUND_SERVICE</code>, <code>FOREGROUND_SERVICE_SPECIAL_USE</code>)</td><td>Keeps the overlay active while the App is not the app you're currently looking at.</td></tr>
+      <tr><td><strong>Vibrate</strong> (<code>VIBRATE</code>)</td><td>Haptic feedback when you turn protection on or off.</td></tr>
+      <tr><td><strong>Internet / network state</strong> (<code>INTERNET</code>, <code>ACCESS_NETWORK_STATE</code>, <code>ACCESS_WIFI_STATE</code>)</td><td>Used by the Firebase and AdMob SDKs described above, not by any App feature directly.</td></tr>
+    </table>
+
+    <h2>4. Data we do NOT collect</h2>
+    <p>Tilt Veil does not collect your name, email address, phone number, precise or approximate location,
+    contacts, photos, videos, microphone or camera input, health or fitness data, financial or payment
+    information, SMS/call logs, or your web browsing history. The App does not read or store screen content
+    from other apps, and does not keep a history of which apps you've opened.</p>
+
+    <h2>5. How data is shared</h2>
+    <p>We do not sell your data. The only sharing that occurs is the data described in §3.3–3.4 flowing to
+    <strong>Google</strong> (Firebase and AdMob/UMP are Google services), governed by
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+    Policy</a>. We do not share data with any other third party.</p>
+
+    <h2>6. Data retention and deletion</h2>
+    <p>Your on-device settings (§3.1) are stored only on your device and are removed the moment you
+    uninstall the App — there is no server copy to delete. Data collected by Firebase/AdMob (§3.3–3.4) is
+    retained by Google under Google's own retention policies; you can reset your advertising identifier or
+    opt out of personalized ads/analytics from your device's system settings at any time. To stop all data
+    collection by the App, uninstall it.</p>
+
+    <h2>7. Your choices and rights</h2>
+    <ul>
+      <li><strong>Usage Access</strong> is entirely optional and can be revoked at any time from Android
+      Settings → Apps → Special app access → Usage access.</li>
+      <li><strong>Display over other apps</strong> can be revoked from Android Settings → Apps → Tilt Veil
+      → Display over other apps, though doing so disables the App's core overlay function.</li>
+      <li>Depending on where you live, you may have rights to access, correct, or delete personal data, or
+      to object to certain processing (for example under the GDPR or the CCPA/CPRA). Because the App itself
+      stores no personal data on any server we control, most such requests are fulfilled simply by
+      uninstalling the App; for anything related to Firebase/AdMob data, contact us at
+      <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a> and we will assist or direct you to
+      the relevant Google controls.</li>
+    </ul>
+
+    <h2>8. Children's privacy</h2>
+    <p>Tilt Veil is a general-audience utility and is not directed to children. We do not knowingly collect
+    personal information from children. If you believe a child has provided us personal information,
+    contact us at <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a> and we will address
+    it.</p>
+
+    <h2>9. International data transfers</h2>
+    <p>Firebase and AdMob/UMP may process data on servers located outside your country, as described in
+    <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy
+    Policy</a>.</p>
+
+    <h2>10. Changes to this policy</h2>
+    <p>We may update this Privacy Policy from time to time. Material changes will be reflected by updating
+    the "Effective date" above. Continued use of the App after an update constitutes acceptance of the
+    revised policy.</p>
+
+    <h2>11. Contact us</h2>
+    <p>Questions or requests about this Privacy Policy:
+    <a href="mailto:cghotel1206@gmail.com">cghotel1206@gmail.com</a>.</p>
+    <p><strong>Publisher:</strong> CauGiay Hotel</p>
+  </main>
+
+  <footer>
+    <a href="../">&larr; Back to Tilt Veil — Legal &amp; Policies</a> &nbsp;·&nbsp;
+    <a href="../terms/">Terms of Use</a>
+  </footer>
+</div>
+</body>
+</html>
